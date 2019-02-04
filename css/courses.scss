@@ -1,0 +1,119 @@
+.courses{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__item{
+        max-width: 326px;
+        flex-basis: 326px;
+        position: relative;
+
+        @include phones{
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: .7;
+            left: 0;
+            top: 0;
+        }
+
+        &--active:after{
+            background-color: #526666;
+        }
+    }
+
+    &__img{
+        display: block;
+        max-width: 326px;
+
+        @include phones{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &__descr{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        z-index: 10;
+        padding: 0 30px;
+    }
+
+    &__text{
+        font-size: 14px;
+        color: #f0eb65;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+}
+
+// .news{
+//     margin-top: 100px;
+
+//     @include phones{
+//         margin-top: 20px;
+//     }
+
+//     &__list{
+//         display: flex;
+//         justify-content: space-between;
+//         flex-wrap: wrap;
+//     }
+
+//     &__item{
+//         display: flex;
+//         flex-basis: 273px;
+//         max-width: 273px;
+//         position: relative;
+//         margin-bottom: 20px;
+//         text-decoration: none;
+//     }
+
+//     &__img{
+
+//         @include phones{
+//             max-width: 100px;
+//             height: 100px;
+//             object-fit: cover;
+//         }
+//     }
+
+//     &__descr{
+//         position: absolute;
+//         left: 0;
+//         bottom: 0;
+//         color: #fff;
+//         padding: 16px;
+//         font-family: 'Open Sans', sans-serif;
+
+//         @include phones{
+//             position: static;
+//             color: #333333;
+//             padding: 0 0 0 10px;
+//         }
+//     }
+
+//     &__title{
+//         font-weight: bold;
+//         font-size: 16px;
+//         margin-bottom: 5px;
+
+//         @include phones{
+//             font-size: 14px;
+//         }
+//     }
+
+//     &__text{
+//         font-size: 12px;
+//     }
+// }

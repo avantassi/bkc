@@ -1,0 +1,192 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 18px; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  list-style: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+  border: 1px solid red; }
+
+.second-title {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 40px; }
+  .second-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    background-color: #72bdbe;
+    bottom: -20px; }
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .courses__item {
+    max-width: 326px;
+    flex-basis: 326px;
+    position: relative; }
+    @media screen and (max-width: 360px) {
+      .courses__item {
+        max-width: 100%;
+        flex-basis: 100%; } }
+    .courses__item:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: .7;
+      left: 0;
+      top: 0; }
+    .courses__item--active:after {
+      background-color: #526666; }
+  .courses__img {
+    display: block;
+    max-width: 326px; }
+    @media screen and (max-width: 360px) {
+      .courses__img {
+        max-width: 100%;
+        width: 100%; } }
+  .courses__descr {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 10;
+    padding: 0 30px; }
+  .courses__text {
+    font-size: 14px;
+    color: #f0eb65;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; }
+
+.about {
+  background: linear-gradient(45deg, #353c62 35%, #72bec3, #fff 65%);
+  background: url(../img/about-bg.jpg) center center no-repeat;
+  background-size: cover; }
+  .about__wrap {
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      .about__wrap {
+        flex-direction: column;
+        padding-top: 30px; } }
+  .about__descr {
+    padding: 30px;
+    padding-bottom: 0; }
+  .about__text {
+    padding-bottom: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #000205; }
+
+.details {
+  display: flex;
+  flex-direction: row; }
+  @media screen and (max-width: 768px) {
+    .details {
+      flex-direction: column;
+      align-items: center; } }
+  .details__descr {
+    width: 40%;
+    padding: 20px; }
+    @media screen and (max-width: 768px) {
+      .details__descr {
+        width: 80%; } }
+    @media screen and (max-width: 360px) {
+      .details__descr {
+        width: 100%; } }
+  .details__text {
+    color: #72bdbe;
+    font-size: 12px;
+    font-family: 'Fira Sans', sans-serif; }
+    .details__text--border {
+      color: #000205;
+      position: relative;
+      margin-bottom: 40px; }
+      .details__text--border:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 85px;
+        height: 2px;
+        background-color: #72bdbe;
+        bottom: -20px; }
+  .details__table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 15px 0; }
+    @media screen and (max-width: 768px) {
+      .details__table {
+        width: 80%; } }
+    @media screen and (max-width: 360px) {
+      .details__table {
+        width: 100%; } }
+    .details__table td {
+      padding: 10px 15px;
+      color: #000205;
+      font-size: 12px;
+      font-family: 'Fira Sans', sans-serif; }
+
+/* Нечетные строки */
+.details__table tr:nth-child(odd) {
+  background: #fff; }
+
+/* Четные строки */
+.details__table tr:nth-child(even) {
+  background: #d6d7d8; }
+
+.btn {
+  background-color: #f0eb65;
+  color: #201600;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  padding: 10px 115px;
+  cursor: pointer; }
+  @media screen and (max-width: 360px) {
+    .btn {
+      padding: 10px 80px; } }
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+.about{
+    background: linear-gradient(45deg, #353c62 35%, #72bec3, #fff 65%);
+    background: url(../img/about-bg.jpg) center center no-repeat;
+    background-size: cover;
+
+    &__wrap{
+        display: flex;
+        align-items: center;
+
+        @include tablets{
+            flex-direction: column;
+            padding-top: 30px;
+        }
+    }
+
+    &__descr{
+        padding: 30px;
+        padding-bottom: 0;
+    }
+
+    &__text{
+        padding-bottom: 30px;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 18px;
+        color: #000205;
+    }
+}
